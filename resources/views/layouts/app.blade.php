@@ -98,7 +98,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">KATEGORI & PRODUK</h6>
             <a class="collapse-item {{ Request::is('admin/category*') ? ' active' : '' }}" href="{{ route('admin.category.index') }}">KATEGORI</a>
-            <a class="collapse-item {{ Request::is('admin/product*') ? ' active' : '' }}" href="#">PRODUK</a>
+            <a class="collapse-item {{ Request::is('admin/product*') ? ' active' : '' }}" href="{{ route('admin.product.index') }}">PRODUK</a>
           </div>
         </div>
       </li>
@@ -108,7 +108,7 @@
       </div>
 
       <li class="nav-item {{ Request::is('admin/order*') ? ' active' :  '' }}">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('admin.order.index') }}">
           <i class="fas fa-shopping-cart"></i>
           <span>ORDERS</span></a>
       </li>
@@ -119,7 +119,7 @@
           <span>CUSTOMERS</span></a>
       </li>
 
-      <li class="nav-item {{ Request::is('admin/slider*') ? ' active' :  '' }}">
+      {{-- <li class="nav-item {{ Request::is('admin/slider*') ? ' active' :  '' }}">
         <a class="nav-link" href="#">
           <i class="fas fa-laptop"></i>
           <span>SLIDERS</span></a>
@@ -129,10 +129,10 @@
         <a class="nav-link" href="#">
           <i class="fas fa-user-circle"></i>
           <span>PROFILE</span></a>
-      </li>
+      </li> --}}
 
       <li class="nav-item {{ Request::is('admin/user*') ? ' active' :  '' }}">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('admin.user.index') }}">
           <i class="fas fa-users"></i>
           <span>USERS</span></a>
       </li>
@@ -143,12 +143,12 @@
       <li class="nav-item {{ Request::is('admin/order*') ? ' active' :  '' }}">
         <a class="nav-link" href="#">
           <i class="fas fa-barcode"></i>
-          <span>Generate Kode</span></a>
+          <span>GENERATE KODE</span></a>
       </li>
       <li class="nav-item {{ Request::is('admin/order*') ? ' active' :  '' }}">
         <a class="nav-link" href="#">
           <i class="fas fa-keyboard"></i>
-          <span>Input kode Produksi</span></a>
+          <span>INPUT KODE PRODUKSI</span></a>
       </li>
 
       <!-- Divider -->
