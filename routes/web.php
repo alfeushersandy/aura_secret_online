@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,5 +46,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/customer', [CustomerController::class, 'index'])->name('admin.customer.index');
         //route user
         Route::resource('/user', UserController::class, ['except' => ['show'], 'as' => 'admin']);
+        //route slider
+        Route::resource('/slider', SliderController::class, ['except' => ['show', 'create', 'edit', 'update'], 'as' => 'admin']);
     // });
 });

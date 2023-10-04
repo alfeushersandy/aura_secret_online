@@ -212,7 +212,10 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Hak Cipta Dilindungi &copy; 2023 Aura Secret Online Shop - Alfeus Putra Hersandi </span>
+            <span>Hak Cipta Dilindungi &copy; 2023 Aura Secret Online Shop - Yayang Sundawa </span>
+          </div>
+          <div class="copyright text-center mt-3">
+            <span>Develop By - Alfeus Putra Hersandi </span>
           </div>
         </div>
       </footer>
